@@ -1,0 +1,13 @@
+.coin_1 {
+    animation: coin_1 10s linear 2s infinite, bg_change 10s steps(1) 2s infinite;
+}
+
+@keyframes coin_1{
+    0%{transform: rotateY(360deg);}
+    10%{transform: rotateY(0deg)}
+}
+
+@keyframes bg_change{
+    2.5%{background: darkblue;}
+    7.5%{background: seagreen}
+}

@@ -1,0 +1,67 @@
+.easing-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.easing-item{
+    display: flex;
+    width: 90vw;
+    height: 10vh;
+    align-items: center;
+    font-weight: bold;
+    border: 2px dashed black;
+    border-right-style: solid;
+    border-left-style: solid;
+}
+
+.easing-text{
+    display: flex;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 30vw;
+    border-right: 2px dashed black;
+}
+
+.round{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: red;
+    animation: round 3s infinite alternate;
+}
+
+@keyframes round{
+    0%{transform: translateX(0px);}
+    100%{transform: translateX(calc(60vw - 52px));}
+}
+
+.round.linear {
+    animation-timing-function: linear;
+}
+.round.ease {
+    animation-timing-function: ease;
+}
+.round.easein {
+    animation-timing-function: ease-in;
+}
+.round.easeout {
+    animation-timing-function: ease-out;
+}
+.round.easeinout {
+    animation-timing-function: ease-in-out;
+}
+.round.steps {
+    animation-timing-function: steps(5, start);
+}
+.round.cb {
+    animation-timing-function: cubic-bezier(1,0,0,1);
+}
+.round.cb2 {
+    animation-timing-function: cubic-bezier(1,0,1,0);
+}
+.round.cb3 {
+    animation-timing-function: cubic-bezier(0.5,-1,0.5,2);
+}

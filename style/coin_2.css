@@ -1,0 +1,8 @@
+.coin_2 {
+    transform: rotateY(0deg);
+}
+.coin_2_second_state {
+    transform: rotateY(360deg);
+    background: red;
+    transition: transform 1s linear, background-color 2s ease;
+}

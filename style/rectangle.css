@@ -1,0 +1,17 @@
+.rectangle{
+    width: 160px;
+    height: 90px;
+    background: #3fc878;
+}
+
+.big_rectangle{
+    width: 480px;
+    height: 450px;
+    background: #f0f0f0;
+}
+
+.rectangle_stroke{
+    width: 160px;
+    height: 90px;
+    border: 2px dotted #333;
+}
